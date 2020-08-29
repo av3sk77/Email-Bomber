@@ -51,10 +51,10 @@ Required Arguments:
 ### Usage
 #### Send Email Without Attachment
 ```bash
-# python3 bulk-email-sender.py --list /root/Desktop/email.txt --name "Your Name" --email senderemail@example.com --password sender_password --subject "Email Subject Here" --body /root/Desktop/body.txt
+# python3 email-bomber.py --name "Your Name" --email senderemail@example.com --password sender_password --sendto sendto@example.com --number 3 --subject "Email Subject Here" --body /root/Desktop/body.txt
 ```
 
 #### Send Email With Attachment
 ```bash
-# python3 bulk-email-sender.py --list /root/Desktop/email.txt --name "Your Name" --email senderemail@example.com --password sender_password --subject "Email Subject Here" --body /root/Desktop/body.txt --attach /root/Desktop/mail.csv
+# python3 email-bomber.py --name "Your Name" --email senderemail@example.com --password sender_password --sendto sendto@example.com --number 3 --subject "Email Subject Here" --body /root/Desktop/body.txt --attach /root/Desktop/mail.csv
 ```
