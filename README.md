@@ -6,7 +6,7 @@ You must be Install Python3 Version-<br/>
 You can Download the Python3 from this link-
 https://www.python.org/downloads/
 
-### Allow less secure apps
+### Allow less secure app
 Before Run this Script Make Sure you have enable the Less Secure App Accees.<br/>
 Link- https://myaccount.google.com/u/1/lesssecureapps
 ![alt text](https://github.com/av3sk77/Bulk-Email-Sender/blob/master/less-secure-app.png?raw=true)
