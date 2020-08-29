@@ -12,7 +12,7 @@ Link- https://myaccount.google.com/u/1/lesssecureapps
 ![alt text](https://github.com/av3sk77/Bulk-Email-Sender/blob/master/less-secure-app.png?raw=true)
 
 ## Before Run the Script
-Create Two text files which contain the email lists and the Body part Like-
+Create a text files which contain the Body part Like-
 
 ### body.txt
 ```bash
