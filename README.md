@@ -40,10 +40,21 @@ optional arguments:
 Required Arguments:
   --name NAME          Email Sender_Name [Ex. --name "firstname lastname"]
   --email EMAIL        Sender Email Address [Ex. --email sender@example.com]
-  --password PASSWORD  Sender Email Password [Ex. --password Password@123]
+  --password PASSWORD  Sender Email Password [Ex. --password sender_password]
   --sendto SENDTO      Send To Email Address [Ex. --sendto sendto@example.com]
   --number NUMBER      Number of times [Ex. --number 100]
   --subject SUBJECT    Subject Content [Ex. --subject "Enter Subject Here"]
   --body BODY          Body Content Location [Ex. --body "/root/Desktop/BodyContent.txt"]
 
+```
+
+### Usage
+#### Send Email Without Attachment
+```bash
+# python3 bulk-email-sender.py --list /root/Desktop/email.txt --name "Your Name" --email senderemail@example.com --password sender_password --subject "Email Subject Here" --body /root/Desktop/body.txt
+```
+
+#### Send Email With Attachment
+```bash
+# python3 bulk-email-sender.py --list /root/Desktop/email.txt --name "Your Name" --email senderemail@example.com --password sender_password --subject "Email Subject Here" --body /root/Desktop/body.txt --attach /root/Desktop/mail.csv
 ```
