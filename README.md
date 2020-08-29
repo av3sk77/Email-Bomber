@@ -14,7 +14,7 @@ Link- https://myaccount.google.com/u/1/lesssecureapps
 ## Before Run the Script
 Create Two text files which contain the email lists and the Body part Like-
 
-#### body.txt
+### body.txt
 ```bash
 Hello Sir/Madam,
 
