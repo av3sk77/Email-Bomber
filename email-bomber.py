@@ -2,7 +2,7 @@
 # Email Bomber Sender Script
 # Date: 29-09-2020
 # Help Menu- python3 email-bomber.py -h
-# Script Usage- python3 email-bomber.py --name "Your Name" --email senderemail@example.com --password sender_password --sendto sendto@example.com --number 100 --subject "Email Subject Here" --body /root/Desktop/body.txt
+# Script Usage- python3 email-bomber.py --name "Your Name" --email senderemail@example.com --sendto sendto@example.com --number 100 --subject "Email Subject Here" --body /root/Desktop/body.txt
 
 #!/usr/bin/python3
 
@@ -10,6 +10,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email.message import Message
+from getpass import getpass
 from email import encoders
 from pathlib import Path
 import mimetypes
@@ -38,7 +39,6 @@ parser.add_argument("--attach", help='Add Attachment [Ex. --attach "/root/Deskto
 requiredNamed = parser.add_argument_group('Required Arguments')
 requiredNamed.add_argument("--name", help='Email Sender_Name [Ex. --name "firstname lastname"]', type=str, required=True)
 requiredNamed.add_argument("--email", help='Sender Email Address [Ex. --email sender@example.com]', type=str, required=True)
-requiredNamed.add_argument("--password", help='Sender Email Password [Ex. --password Password@123]', type=str, required=True)
 requiredNamed.add_argument("--sendto", help='Send To Email Address [Ex. --sendto sendto@example.com]', type=str, required=True)
 requiredNamed.add_argument("--number", help='Number of times [Ex. --number 100]', type=int, required=True)
 requiredNamed.add_argument("--subject", help='Subject Content [Ex. --subject "Enter Subject Here"]', type=str, required=True)
@@ -46,9 +46,10 @@ requiredNamed.add_argument("--body", help='Body Content Location [Ex. --body "/r
 
 args = parser.parse_args()
 
+sender_password = getpass("Enter the Sender Email_Password: "
+
 sender_name = args.name
 sender_email = args.email
-sender_password = args.password
 send_to = args.sendto
 num = args.number
 email_subject = args.subject
