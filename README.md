@@ -32,7 +32,7 @@ Thanks For Using this Script
 ```bash
 # python3 email-bomber.py -h
 
-usage: email-bomber.py [-h] [--attach ATTACH] --name NAME --email EMAIL --password PASSWORD --sendto SENDTO --number NUMBER --subject SUBJECT --body BODY
+usage: email-bomber.py [-h] [--attach ATTACH] --name NAME --email EMAIL --sendto SENDTO --number NUMBER --subject SUBJECT --body BODY
 
 optional arguments:
   -h, --help           show this help message and exit
@@ -41,7 +41,6 @@ optional arguments:
 Required Arguments:
   --name NAME          Email Sender_Name [Ex. --name "firstname lastname"]
   --email EMAIL        Sender Email Address [Ex. --email sender@example.com]
-  --password PASSWORD  Sender Email Password [Ex. --password sender_password]
   --sendto SENDTO      Send To Email Address [Ex. --sendto sendto@example.com]
   --number NUMBER      Number of times [Ex. --number 100]
   --subject SUBJECT    Subject Content [Ex. --subject "Enter Subject Here"]
@@ -52,10 +51,10 @@ Required Arguments:
 ### Usage
 #### Send Email Without Attachment
 ```bash
-# python3 email-bomber.py --name "Your Name" --email senderemail@example.com --password sender_password --sendto sendto@example.com --number 3 --subject "Email Subject Here" --body /root/Desktop/body.txt
+# python3 email-bomber.py --name "Your Name" --email senderemail@example.com --sendto sendto@example.com --number 3 --subject "Email Subject Here" --body /root/Desktop/body.txt
 ```
 
 #### Send Email With Attachment
 ```bash
-# python3 email-bomber.py --name "Your Name" --email senderemail@example.com --password sender_password --sendto sendto@example.com --number 3 --subject "Email Subject Here" --body /root/Desktop/body.txt --attach /root/Desktop/mail.csv
+# python3 email-bomber.py --name "Your Name" --email senderemail@example.com --sendto sendto@example.com --number 3 --subject "Email Subject Here" --body /root/Desktop/body.txt --attach /root/Desktop/mail.csv
 ```
