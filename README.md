@@ -26,3 +26,24 @@ Aves Ahmed Khan
 
 Thanks For Using this Script
 ```
+
+## How To Work
+### Help Menu
+```bash
+# python3 email-bomber.py -h
+usage: email-bomber.py [-h] [--attach ATTACH] --name NAME --email EMAIL --password PASSWORD --sendto SENDTO --number NUMBER --subject SUBJECT --body BODY
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --attach ATTACH      Add Attachment [Ex. --attach "/root/Desktop/mail.csv"]
+
+Required Arguments:
+  --name NAME          Email Sender_Name [Ex. --name "firstname lastname"]
+  --email EMAIL        Sender Email Address [Ex. --email sender@example.com]
+  --password PASSWORD  Sender Email Password [Ex. --password Password@123]
+  --sendto SENDTO      Send To Email Address [Ex. --sendto sendto@example.com]
+  --number NUMBER      Number of times [Ex. --number 100]
+  --subject SUBJECT    Subject Content [Ex. --subject "Enter Subject Here"]
+  --body BODY          Body Content Location [Ex. --body "/root/Desktop/BodyContent.txt"]
+
+```
