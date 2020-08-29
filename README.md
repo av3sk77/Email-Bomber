@@ -9,7 +9,7 @@ https://www.python.org/downloads/
 ### Allow less secure app
 Before Run this Script Make Sure you have enable the Less Secure App Accees.<br/>
 Link- https://myaccount.google.com/u/1/lesssecureapps
-![alt text](https://github.com/av3sk77/Bulk-Email-Sender/blob/master/less-secure-app.png?raw=true)
+![alt text](https://github.com/av3sk77/Email-Bomber/blob/master/less-secure-app.png?raw=true)
 
 ## Before Run the Script
 Create a text files which contain the Body part Like-
