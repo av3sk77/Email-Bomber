@@ -46,7 +46,7 @@ requiredNamed.add_argument("--body", help='Body Content Location [Ex. --body "/r
 
 args = parser.parse_args()
 
-sender_password = getpass("Enter the Sender Email_Password: "
+sender_password = getpass("Enter the Sender Email_Password: ")
 
 sender_name = args.name
 sender_email = args.email
